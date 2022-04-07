@@ -50,7 +50,7 @@ export default function Home() {
 					<div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-2 xl:gap-x-8">
 						{blogs.map((blog) => (
 							<div key={blog.slug}>
-								<Link href={`/blog/${blog.slug}`} >
+								<Link href={`/blog/${blog.slug}`} passHref>
 									<div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
 										<img
 											src={blog.imageSrc}
@@ -64,15 +64,15 @@ export default function Home() {
 										let text = tag;
 										if (blog.tags.length > 0 && blog.tags.indexOf(tag) !== blog.tags.length - 1) text = text + ', '
 										return (
-											<Link href={`/category/${tag}`}>{text}</Link>
+											<Link key={tag} href={`/category/${tag}`} passHref>{text}</Link>
 										)
 									})}
 								</p>
-								<Link href={`/blog/${blog.slug}`}>
+								<Link href={`/blog/${blog.slug}`} passHref>
 									<div className="mt-3 text-3xl text-gray-700 cursor-pointer inline-block">{blog.name}</div>
 								</Link>
 								<p className='font-thin mt-3'>{blog.excerpt}</p>
-								<Link href={`/blog/${blog.slug}`}>
+								<Link href={`/blog/${blog.slug}`} passHref>
 									<p className='mt-3 inline-block border-b border-black font-thin cursor-pointer'>Read More</p>
 								</Link>
 							</div>
