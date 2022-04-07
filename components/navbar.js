@@ -27,9 +27,15 @@ const SocialLinks = () => {
     const twitterUsername = 'kadyanikhil';
     return (
         <div className='h-full flex space-x-5 items-center justify-center text-xl'>
-            <a href={'https://instagram.com/' + instagramUsername} target='_blank'><FiInstagram /></a>
-            <a href={'mailto:' + emailAddress} target='_blank'><FiMail /></a>
-            <a href={'https://twitter.com/' + twitterUsername} target='_blank'><FiTwitter /></a>
+            <a href={'https://instagram.com/' + instagramUsername} target='_blank' rel="noreferrer">
+                <FiInstagram />
+            </a>
+            <a href={'mailto:' + emailAddress} target='_blank' rel="noreferrer">
+                <FiMail />
+            </a>
+            <a href={'https://twitter.com/' + twitterUsername} target='_blank' rel="noreferrer">
+                <FiTwitter />
+            </a>
         </div>
     )
 }
