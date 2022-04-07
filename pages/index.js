@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 
 const blogs = [
 	{
-		slug: 1,
+		slug: 'elements',
 		date: '4/2/22',
 		tags: ['Wallpaper'],
 		name: 'Elements',
@@ -12,7 +12,7 @@ const blogs = [
 		imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
 	},
 	{
-		slug: 1,
+		slug: 'apple-pixel-park-night',
 		date: '4/2/22',
 		tags: ['Wallpaper', 'Design', 'Apple Park'],
 		name: 'Apple Pixel Park (But Night)',
@@ -21,7 +21,7 @@ const blogs = [
 		imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
 	},
 	{
-		slug: 1,
+		slug: 'trust-the-process',
 		date: '4/2/22',
 		tags: ['Design', 'Merch', 'Wallpaper'],
 		name: 'Trust the Process(or)',
@@ -30,7 +30,7 @@ const blogs = [
 		imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
 	},
 	{
-		slug: 1,
+		slug: 'apple-pixel-park',
 		date: '4/2/22',
 		tags: ['Design', 'Apple Park', 'Wallpaper'],
 		name: 'Apple Pixel Park',
