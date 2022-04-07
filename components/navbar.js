@@ -43,8 +43,8 @@ const SocialLinks = () => {
 export default function Navbar() {
     const [openMenu, setMenu] = useState(false);
     return (
-        <nav className={`fixed top-0 left-0 bg-white w-screen sm:h-auto sm:px-20 ${openMenu ? 'h-screen' : 'h-auto'}`}>
-            <div className='flex uppercase justify-between py-6 sm:py-10 px-6 '>
+        <nav className={`fixed top-0 left-0 z-50 bg-white w-screen sm:h-auto sm:px-20 ${openMenu ? 'h-screen' : 'h-auto'}`}>
+            <div className='flex uppercase justify-between py-6 sm:py-8 px-6 '>
                 <div className='flex items-center space-x-4'>
                     <div className='text-3xl -mt-2'>🍿</div>
                     <NavigationLinks showDesktopOnly={true} />
@@ -57,7 +57,7 @@ export default function Navbar() {
                 </button>
             </div>
             {openMenu &&
-                <div className='flex items-center space-evenly flex-wrap bg-white h-full -mt-36'>
+                <div className='flex items-center space-evenly flex-wrap bg-white h-full -mt-24'>
                     <div className='w-full' />
                     <div className='text-5xl space-y-2 text-center w-full'>
                         <NavigationLinks />
